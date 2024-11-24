@@ -1,4 +1,4 @@
-package net.hothlica.testmod;
+package net.hothlica.testmod.common;
 
 import net.fabricmc.api.ModInitializer;
 

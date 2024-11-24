@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.hothlica.testmod.TestMod"
+			"net.hothlica.testmod.common.TestMod"
 		],
 		"fabric-datagen": [
-			"net.hothlica.testmod.TestModDataGenerator"
+			"net.hothlica.testmod.data.TestModDataGenerator"
 		],
 		"client": [
-			"net.hothlica.testmod.TestModClient"
+			"net.hothlica.testmod.client.TestModClient"
 		]
 	},
 	"mixins": [
