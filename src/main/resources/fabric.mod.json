@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.hothlica.testmod.common.TestMod"
+			"net.hothlica.testmod.core.TestMod"
 		],
 		"fabric-datagen": [
 			"net.hothlica.testmod.data.TestModDataGenerator"

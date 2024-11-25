@@ -1,4 +1,6 @@
-package net.hothlica.testmod.common;
+package net.hothlica.testmod.core;
+
+import net.hothlica.testmod.core.testBlocks.*;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +16,12 @@ public class TestMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		//TestEntities.init();
+		testBlocks.init();
+		//testItems.init();
+		//TestComponentTypes.init();
+		//TestRecipeSerializers.init();
+		//TestSoundEvents.initialize();
 
 	}
 }
