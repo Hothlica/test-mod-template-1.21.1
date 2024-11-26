@@ -1,7 +1,5 @@
 package net.hothlica.testmod.core;
 
-import net.hothlica.testmod.core.testBlocks.*;
-
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -17,8 +15,8 @@ public class TestMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		//TestEntities.init();
-		testBlocks.init();
-		//testItems.init();
+		TestBlocks.init();
+		TestItems.init();
 		//TestComponentTypes.init();
 		//TestRecipeSerializers.init();
 		//TestSoundEvents.initialize();
