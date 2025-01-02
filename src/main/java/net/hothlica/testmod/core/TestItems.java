@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.text.Text;
@@ -21,7 +22,7 @@ import static net.hothlica.testmod.core.TestMod.MOD_ID;
 public class TestItems {
     private static final Map<Item, Identifier> ITEMS = new LinkedHashMap<>();
 
-    public static final Item CERULEAN_DUST = add("cerulean_dust", new Item(new Item.Settings().food(new FoodComponent.Builder().nutrition(-1).saturationModifier(0.2f).build())),null);
+    public static final Item CERULEAN_DUST = add("cerulean_dust", new Item(new Item.Settings().food(new FoodComponent.Builder().nutrition(-1).saturationModifier(0.2f).build())), ItemGroups.FOOD_AND_DRINK);
 
     public static void init(){
         ITEMS.keySet().forEach(item -> Registry.register(Registries.ITEM, ITEMS.get(item), item));

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "testmod:block/goldborne_log_top",
+    "side": "testmod:block/goldborne_log_side"
+  }
+}

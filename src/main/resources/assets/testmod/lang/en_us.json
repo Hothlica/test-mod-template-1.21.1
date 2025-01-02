@@ -1,3 +1,9 @@
 {
-  "item.testmod.cerulean_dust": "Cerulean Dust"
+  "item.testmod.cerulean_dust": "Cerulean Dust",
+
+  "block.testmod.cerulean_bricks": "Cerulean Bricks",
+  "block.testmod.aureate_block": "Aureate Block",
+  "block.testmod.goldborne_log": "Goldborne Log",
+  "block.testmod.goldborne_planks": "Goldborne Planks",
+  "block.testmod.goldborne_leaves": "Goldborne Leaves"
 }
