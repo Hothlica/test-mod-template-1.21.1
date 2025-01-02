@@ -27,8 +27,8 @@ public class TestBlocks {
     //Register the blocks
     public static final Block CERULEAN_BRICKS = add("cerulean_bricks", new CeruleanBricks(AbstractBlock.Settings.copy(Blocks.STONE_BRICKS)), ItemGroups.BUILDING_BLOCKS);
     public static final Block AUREATE_BLOCK = add("aureate_block", new AureateBlock(AbstractBlock.Settings.copy(Blocks.GOLD_BLOCK)), ItemGroups.BUILDING_BLOCKS);
-    public static final PillarBlock GOLDBORNE_LOG = add("goldborne_log", new GoldborneLog(AbstractBlock.Settings.copy(Blocks.OAK_LOG)), ItemGroups.NATURAL);
-    public static final LeavesBlock GOLDBORNE_LEAVES = add("goldborne_leaves", new GoldborneLeaves(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES).nonOpaque()), ItemGroups.NATURAL);
+    public static final Block GOLDBORNE_LOG = add("goldborne_log", new GoldborneLog(AbstractBlock.Settings.copy(Blocks.OAK_LOG)), ItemGroups.NATURAL);
+    public static final Block GOLDBORNE_LEAVES = add("goldborne_leaves", new GoldborneLeaves(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES).nonOpaque()), ItemGroups.NATURAL);
     public static final Block GOLDBORNE_PLANKS = add("goldborne_planks", new GoldbornePlanks(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)), ItemGroups.BUILDING_BLOCKS);
 
     //Batch Registration
