@@ -20,11 +20,18 @@ import java.util.Map;
 import static net.hothlica.testmod.core.TestMod.MOD_ID;
 
 public class TestItems {
+
+    public static final RegistryKey<ItemGroup> TESTMOD_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(TestMod.MOD_ID, "item_group"));
+    public static final ItemGroup TESTMOD_ITEM_GROUP = FabricItemGroup.builder().icon(() -> new ItemStack(TestItems.CERULEAN_DUST))
+            .displayName(Text.translatable("itemGroup.testmod.items"))
+            .build();
+
     private static final Map<Item, Identifier> ITEMS = new LinkedHashMap<>();
 
-    public static final Item CERULEAN_DUST = add("cerulean_dust", new Item(new Item.Settings().food(new FoodComponent.Builder().nutrition(-1).saturationModifier(0.2f).build())), ItemGroups.FOOD_AND_DRINK);
+    public static final Item CERULEAN_DUST = add("cerulean_dust", new Item(new Item.Settings().food(new FoodComponent.Builder().nutrition(-1).saturationModifier(0.2f).build())), TESTMOD_ITEM_GROUP_KEY);
 
     public static void init(){
+        TestMod.LOGGER.info("Registering item groups for " + TestMod.MOD_ID);
         ITEMS.keySet().forEach(item -> Registry.register(Registries.ITEM, ITEMS.get(item), item));
     }
 
@@ -36,9 +43,4 @@ public class TestItems {
         return item;
     }
 
-    public static final RegistryKey<ItemGroup> TESTMOD_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(TestMod.MOD_ID, "item_group"));
-    public static final ItemGroup TESTMOD_ITEM_GROUP = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(TestItems.CERULEAN_DUST))
-            .displayName(Text.translatable("itemGroup.testmod.items"))
-            .build();
 }

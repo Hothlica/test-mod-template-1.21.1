@@ -5,5 +5,7 @@
   "block.testmod.aureate_block": "Aureate Block",
   "block.testmod.goldborne_log": "Goldborne Log",
   "block.testmod.goldborne_planks": "Goldborne Planks",
-  "block.testmod.goldborne_leaves": "Goldborne Leaves"
+  "block.testmod.goldborne_leaves": "Goldborne Leaves",
+
+  "itemGroup.testmod.items": "TestMod Items"
 }
